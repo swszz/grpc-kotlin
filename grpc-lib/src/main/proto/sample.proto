@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.swszz";
+option java_outer_classname = "SampleProto";
+
+service Announcement {
+  rpc Announce (AnnouncementRequest) returns (AnnouncementResponse) {
+  }
+}
+
+message AnnouncementRequest {
+  string message = 1;
+}
+
+message AnnouncementResponse {
+  string message = 1;
+}
