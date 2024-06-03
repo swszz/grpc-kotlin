@@ -3,6 +3,7 @@ rootProject.name = "grpc-kotlin"
 include(
     "grpc-eureka",
     "grpc-server",
+    "grpc-client",
     "grpc-lib",
 )
 

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: grpc-client
+  config:
+    import:
+      - classpath:eureka.yaml
+grpc:
+  client:
+    grpc-server:
+      address: 'discovery:///grpc-server'
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
+
+server:
+  port: 8080

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: grpc-server
+  config:
+    import:
+      - classpath:eureka.yaml
+server:
+  port: 58080
+
+grpc:
+  server:
+    port: 0

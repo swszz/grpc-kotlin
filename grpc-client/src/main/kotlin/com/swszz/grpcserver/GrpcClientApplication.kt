@@ -6,8 +6,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient
 
 @EnableDiscoveryClient
 @SpringBootApplication
-class GrpcServerApplication
+class GrpcClientApplication
 
 fun main(args: Array<String>) {
-    runApplication<GrpcServerApplication>(*args)
+    runApplication<GrpcClientApplication>(*args)
 }
